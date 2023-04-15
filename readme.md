@@ -8,4 +8,5 @@
 </ul>
 <br>
 <br>
-![preview](./img/preview.png)
+
+![preview](img/preview.png)
