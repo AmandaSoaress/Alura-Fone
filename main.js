@@ -1,29 +1,19 @@
+const teclado = document.querySelector("section");
+teclado.addEventListener('click', clicarNumero);
 
+function colocarNumeroNaTela(numero) {
+   const tela = document.querySelector("input[type=tel]")
 
-var teclado = document.querySelector("section");
-teclado.addEventListener('click', item);
-
-function item(evento) {
-   var input = evento.target
-   console.log(input.value);
-
-}
-const input = document.querySelector("input[type=tel]")
-const Teclas = document.querySelectorAll("input[type=button]")
-let txt = ""
-
-function digitarNum(num) {
-   txt = txt + num
-   input.value = txt
-
-}
-for (let contador = 0; contador < Teclas.length; contador++) {
-   const tecla = Teclas[contador]
-   const valor = tecla.value
-   tecla.onclick = function () {
-      digitarNum(valor);
+   console.log(numero)
+   if (tela.value.length < 8) {
+      tela.value = tela.value + numero
+   } 
+   if (tela.value.length === 8){
+      alert(tela.value)
    }
 }
-function aperte(value) {
-   alert(value);
+
+function clicarNumero(evento) {
+   const numero_clicado = evento.target.value
+   colocarNumeroNaTela(numero_clicado)
 }
