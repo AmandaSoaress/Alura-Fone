@@ -1,6 +1,5 @@
 # Alura-Fone
-É uma interface de telefone que quando discar um número, ele ficará gravado automaticamente no input e no console e para finalizar terá um evento de alerta disparará ao final do oitavo digito trazendo o valor.
-
+É uma interface de telefone que quando discar um número, ele ficará gravado automaticamente no input e no console, para finalizar terá um evento de alerta ao final do oitavo digito, trazendo o valor digitado. Adicionei também um limitador de digitos para o input usando o length.
 <br>
 <ul>
 <li> Código em JavaScript.</li>
