@@ -1,77 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;700&family=Beth+Ellen&family=Cinzel:wght@400;700;800&family=Emilys+Candy&family=Inter&family=Noto+Serif:wght@400;700&family=Open+Sans:wght@700&family=Roboto:ital,wght@0,300;0,500;1,700&family=Rubik+Pixels&family=Shantell+Sans:wght@300;400;500;600&family=Spectral:ital,wght@0,400;0,500;1,200&family=Tilt+Prism&display=swap');
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #191919;
-    min-height: 100vh;
-    background-color:#301930;
-    border-style: dashed dotted; 
-    border-color: #FFFFFF #00FF00 #FF0000 #0000FF; 
-    padding: 20px;
-  }
-  
-  input {
-    border: none;
-    color: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    font-family: inherit;
-  }
-  
-  h1 {
-   
-    font-family: 'Montserrat', sans-serif;
-    font-size: 35px;
-    color: #f2edf2;
-    font-family: 'Alkatra', cursive;
-    font-family: 'Beth Ellen', cursive;
-    font-family: 'Cinzel', serif;
-    font-family: 'Emilys Candy', cursive;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Noto Serif', serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Rubik Pixels', cursive;
-    font-family: 'Shantell Sans', cursive;
-    font-family: 'Spectral', serif;
-    font-family: 'Tilt Prism', cursive;
-   
+  box-sizing: border-box;
+}
 
-  }
-  
-  .teclado {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px; 
-    background-color:#b870c4;
-    border-radius: 30px;
-    padding: 10px;
-  }
-  
-  input[type=button] {
-    border-radius: 20px;
-     border-color:branco;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    height: 80px;
-    width: 80px;
-   
-  }
-  
-  input[type=tel] {
-    background-color: #b870c4;
-    border-radius: 10px;
-    font-family: monospace;
-    font-size: 22px;
-    height: 40px;
-    margin-bottom: 24px;
-    padding: 10px;
-    text-align: center;
-    width: 280px;
-  }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #191919;
+  min-height: 100vh;
+  background-color: #301930;
+  border-style: dashed dotted;
+  border-color: #ffffff #00ff00 #ff0000 #0000ff;
+  padding: 20px;
+}
+
+input {
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  color: #f2edf2;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Beth Ellen', cursive;
+  font-family: 'Cinzel', serif;
+  font-family: 'Emilys Candy', cursive;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik Pixels', cursive;
+  font-family: 'Shantell Sans', cursive;
+  font-family: 'Spectral', serif;
+  font-family: 'Tilt Prism', cursive;
+}
+
+.teclado {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: #b870c4;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+input[type='button'] {
+  border-radius: 20px;
+  border-color: branco;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  height: 80px;
+  width: 80px;
+}
+
+input[type='tel'] {
+  background-color: #b870c4;
+  border-radius: 10px;
+  font-family: monospace;
+  font-size: 22px;
+  height: 40px;
+  margin-bottom: 24px;
+  padding: 10px;
+  text-align: center;
+  width: 280px;
+}
+
+#clean {
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+  background: #c95bc9;
+  color: #fff;
+  position: center;
+  padding: 15px;
+  font-weight: 700;
+  font-size: 25px;
+  font-family: 'Spectral', serif;
+}
+#clean:hover {
+  color: branco;
+  background: transparent;
+  box-shadow: none;
+}
+#clean:before,
+#clean:after {
+  content: '';
+  position: absolute;
+  top: 1;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: branco;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+#clean:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+#clean:hover:before,
+#clean:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}

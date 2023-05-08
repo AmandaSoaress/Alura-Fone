@@ -17,3 +17,7 @@ function clicarNumero(evento) {
    const numero_clicado = evento.target.value
    colocarNumeroNaTela(numero_clicado)
 }
+
+function recarregarAPagina(){
+   window.location.reload();
+} 
